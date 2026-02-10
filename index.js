@@ -3,9 +3,9 @@ const app = express();
 const PORT = process.env.PORT || 8080
 
 app.get("/", (req, res) => {
-    res.send("Hello from the server v2 updated");
+    res.send("Hello from the server v1");
 })
 
 app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log('Server is up and running on http://localhost:8080');
 })
